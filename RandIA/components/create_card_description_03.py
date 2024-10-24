@@ -1,0 +1,12 @@
+import reflex as rx
+
+
+
+def create_card_description(description_text):
+    """Create a styled description text for a card."""
+    return rx.text(
+        description_text,
+        margin_bottom="1rem",
+        color="#4B5563",
+        #_hover={"background-color": "#1D4ED8"},
+    )
