@@ -18,7 +18,7 @@ def create_quick_links_section():
         rx.list(
             #create_list_item_blue_hover_link("Home", href="#hero"),
             #create_list_item_blue_hover_link(text="About Us"),
-            create_list_item_blue_hover_link("Servicios", href=Route.FUNNEL.value),
+            #create_list_item_blue_hover_link("Servicios", href=Route.FUNNEL.value),
             create_list_item_blue_hover_link("Productos", href=Route.PRODUCTS.value),
             display="flex",
             flex_direction="column",
