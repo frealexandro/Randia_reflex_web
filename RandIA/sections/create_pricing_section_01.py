@@ -11,11 +11,12 @@ def create_pricing_section():
     return rx.box(
         create_centered_heading(
             #heading_text="Un equipo de Data-Developers por una fracción del costo",
-            heading_text="Proximamente",        
+            heading_text="Comming Soon",        
             color="#1F2937",
         ),
         create_centered_heading_smaller(
-            heading_text="Selecciona la cantidad de créditos mensuales según las necesidades de tu equipo. ¡No te preocupes! los créditos no utilizados se acumulan para que no se desperdicie ningún dólar.",
+            heading_text="Our costs are the lowest in the market, and you can acquire credits to try our products before subscribing.",
+            #nuestros costos son los mas bajos del mercado, y puedes adquirir creditos para probar nuestros productos antes de suscribirte.
             color="#1F2937",
         ),
         rx.box(

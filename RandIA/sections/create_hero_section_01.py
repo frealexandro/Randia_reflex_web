@@ -8,7 +8,7 @@ def create_hero_section():
     """Create the hero section with main heading and call-to-action."""
     return rx.box(
         rx.heading(
-            "EL MARKETPLACE MAS GRANDE INTELIGENCIA ARTIFICIAL",
+            "THE BIGGEST AI MARKETPLACE IN THE WORLD",
             font_weight="700",
             margin_bottom="1rem",
             font_size="2.25rem",
@@ -16,10 +16,11 @@ def create_hero_section():
             as_="h1",
         ),
         create_paragraph(
-            paragraph_text="Deja de buscar distintas soluciones para tus problemas de inteligencia artificial, en RandiA encontrarás todo lo que necesitas para tu empresa."
+
+            paragraph_text="Stop looking for different solutions for your artificial intelligence problems, at RandiA you will find everything you need for your company."
         ),
         create_paragraph(
-            paragraph_text=" Alta Calidad | Soluciones Infinitas | Inovación | Inteligencia Artificial "
+            paragraph_text=" High Quality | Infinite Solutions | Innovation | Artificial intelligence "
         ),
         create_waitlist_button(),
         width="100%",

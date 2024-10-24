@@ -9,7 +9,7 @@ import reflex as rx
 def create_learn_more_link(link_href):
     """Create a 'Learn More' link with custom styling."""
     return rx.el.button(
-        "Ver más",
+        "Try it now",
         on_click=rx.redirect(link_href),
         background_color="#FFBE76",
         font_weight="500",

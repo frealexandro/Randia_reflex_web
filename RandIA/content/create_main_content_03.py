@@ -14,7 +14,8 @@ def create_main_content():
     return rx.box(
         rx.box(
             rx.heading(
-            "Todo Un Marketplace De Productos Para Explorar",
+            "A Whole Marketplace Of Products To Explore",
+            #Todo Un Marketplace De Productos Para Explorar
             font_weight="700",
             margin_bottom="2rem",
             font_size="2.25rem",
@@ -24,44 +25,52 @@ def create_main_content():
             as_="h1",
         ),
         create_centered_heading_smaller(
-            heading_text="Para adquirir algunos de nuestros productos de inteligencia artificial no necesitas suscripción, solo pagas el producto",
+            heading_text="All our products have a free credit trial period, so you can try them before subscribing.",
+            #Para adquirir algunos de nuestros productos de inteligencia artificial no necesitas suscripción, solo pagas el producto
             color="#1F2937",
         ),
             rx.box(
                 create_feature_card(
-                    image_alt="Analizador de Datos",
+                    image_alt="Data Analyzer",
                     image_src="/muestra_2_analizador_textos.png",
-                    card_title="🤖 Analizador de Datos",
-                    card_description="Esta herramienta le permite analizar datos de texto de varios archivos de Excel. Puede clasificar el texto en categorías personalizadas, como emociones, sentimientos o cualquier otra etiqueta que defina.",
+                    card_title="🤖 Data Analyzer",
+                    card_description="This tool allows you to analyze text data from various Excel files. You can classify text into custom categories, such as emotions, feelings, or any other tags you define.",
                     number_credits='5',
-                    card_caracteristicas="Conecta y analiza tus archivos automáticamente, automatizando el proceso sin necesidad de intervención manual.",
+                    card_caracteristicas="Conect and analyze your files automatically, automating the process without the need for manual intervention.",
+                    #Conecta y analiza tus archivos automáticamente, automatizando el proceso sin necesidad de intervención manual.
                     route_href = "https://sentiment-analyzer-pro-randia.replit.app/"
                 ),
                 create_feature_card(
-                    image_alt="Clasificador de Sentimientos en Redes Sociales con IA",
-                    image_src="/muestra_2_modelo_a_tu_empresa.png",
-                    card_title="🤖 Clasificador de Sentimientos en Redes Sociales con IA",
-                    card_description=" Herramienta que analiza los comentarios en redes sociales para identificar si son positivos, negativos o neutrales.",
+                    image_alt="Sentiment Classifier in Social Networks with AI",
+                    #Clasificador de Sentimientos en Redes Sociales con IA
+                    image_src="/muestra_2_construction.png",
+                    card_title="🤖 Sentiment Classifier in Social Networks with AI",
+                    card_description="Tool that analyzes comments on social networks to identify if they are positive, negative, or neutral.",
+                    #Herramienta que analiza los comentarios en redes sociales para identificar si son positivos, negativos o neutrales.
                     number_credits='5',
-                    card_caracteristicas="Analiza comentarios y detecta sentimientos, automatizando el proceso sin necesidad de intervención manual.",
+                    card_caracteristicas="Analyze comments and detect feelings, automating the process without the need for manual intervention.",
+                    #Analiza comentarios y detecta sentimientos, automatizando el proceso sin necesidad de intervención manual.
                     route_href = "https://sentiment-analyzer-pro-randia.replit.app/"
                 ),
                 create_feature_card(
-                    image_alt="Búsqueda de Documentacion Tecnica por IA",
-                    image_src="/muestra_2_modelo_a_tu_empresa.png",
-                    card_title="🤖 Búsqueda de Documentacion Tecnica por IA",
-                    card_description="Sistema de búsqueda por inteligencia artificial especializado en recuperar información técnica y manuales de productos.",
+                    image_alt="Search for Technical Documentation by AI",
+                    #Búsqueda de Documentacion Tecnica por IA
+                    image_src="/muestra_2_construction.png",
+                    card_title="🤖 Search for Technical Documentation by AI",
+                    card_description="System that allows you to search for technical documentation using AI, improving the efficiency of your searches.",
                     number_credits='5',
-                    card_caracteristicas="Permita a sus colaboradores responder las distintas preguntas, procesa documentación compleja y es personalizable para varios sectores.",
+                    card_caracteristicas="Search for technical documentation using AI, automating the process without the need for manual intervention.",
                     route_href= "https://sentiment-analyzer-pro-randia.replit.app/"
                 ),
                 create_feature_card(
-                    image_alt="Chatbot avanzado para Atención al cliente con IA",
-                    image_src="/muestra_2_modelo_a_tu_empresa.png",
-                    card_title="🤖 Chatbot Avanzado para Atención al Cliente con IA",
-                    card_description="Chatbot especializado en responder preguntas frecuentes utilizando IA, mejorando la eficiencia en tiempos de respuesta.",
+                    image_alt="AI Advanced Customer Service Chatbot",
+                    #Chatbot avanzado para Atención al cliente con IA
+                    image_src="/muestra_2_construction.png",
+                    card_title="🤖 AI Advanced Customer Service Chatbot",
+                    card_description="Chatbot specialized in answering frequently asked questions using AI, improving efficiency in response times.",
+                    #Chatbot especializado en responder preguntas frecuentes utilizando IA, mejorando la eficiencia en tiempos de respuesta.
                     number_credits='5',
-                    card_caracteristicas="Modelo de IA entrenado con datos de la empresa ofrece respuestas automáticas, 24/7, multicanal y reduce la carga de soporte al gestionar consultas repetitivas.",
+                    card_caracteristicas="Chatbot specialized in answering frequently asked questions using AI, improving efficiency in response times.",
                     route_href= "https://sentiment-analyzer-pro-randia.replit.app/"
                 ),
                 # create_feature_card(
@@ -108,26 +117,30 @@ def create_main_content():
                 create_feature_box(
                     icon_alt="zap",
                     icon_name="zap",
-                    feature_title="Productos de alta calidad",
-                    feature_description="Nuestros productos son desarrollados por expertos en inteligencia artificial y están diseñados para ser fáciles de usar.",
+                    feature_title="High-quality products",
+                    #Productos de alta calidad
+                    feature_description="Our products are developed by experts in artificial intelligence and are designed to be easy to use.",
+                    #Nuestros productos son desarrollados por expertos en inteligencia artificial y están diseñados para ser fáciles de usar.
                 ),
                 create_feature_box(
                     icon_alt="file-stack",
                     icon_name="file-stack",
-                    feature_title="Todo en una misma aplicación",
-                    feature_description="Encuentra todo lo que necesitas en un solo lugar, desde clasificadores de sentimientos hasta chatbots avanzados.",
+                    feature_title="All-in-one platform",
+                    feature_description="Our platform allows you to find all the AI products you need in one place, without having to search on different platforms.",
+                    #Nuestros productos son desarrollados por expertos en inteligencia artificial y están diseñados para ser fáciles de usar.
                 ),
                 create_feature_box(
                     icon_alt="users",
                     icon_name="users",
-                    feature_title="Soporte 24/7",
-                    feature_description="Te ofrecemos soporte técnico en cualquier momento del día, para que puedas resolver tus dudas rápidamente.",
+                    feature_title="Support 24/7",
+                    feature_description="We offer technical support at any time of the day, so you can resolve your doubts quickly.",
+                    #Te ofrecemos soporte técnico en cualquier momento del día, para que puedas resolver tus dudas rápidamente.
                 ),
                 create_feature_box(
                     icon_alt="circle_check_big",
                     icon_name="circle_check_big",
-                    feature_title="Desarrollo de ultra alta calidad",
-                    feature_description="Nuestros productos son desarrollados con las últimas tecnologías y están diseñados para ser fáciles de usar.",
+                    feature_title="We develop the latest technologies",
+                    feature_description="We are constantly updating our products to offer you the latest in artificial intelligence technology.",
                 ),
                 
                 gap="1.5rem",

@@ -4,7 +4,7 @@ def create_copyright_section():
     """Create a copyright section with a horizontal line above it."""
     return rx.box(
         rx.text(
-            "© 2023 RandIA. Derechos reservados.",
+            "© 2023 RandIA. All rights reserved.",
             color="#9CA3AF",
             font_size="0.875rem",
             line_height="1.25rem",

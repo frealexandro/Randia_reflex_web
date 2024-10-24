@@ -15,7 +15,7 @@ def create_pro_plan_box():
             font_size="1rem",
             line_height="1rem",
             margin_bottom="1px",
-            heading_text="¡Mas Popular!",
+            heading_text="¡Most Popular!",
             color="#1F2937",
         ),
         create_custom_heading(
@@ -29,23 +29,23 @@ def create_pro_plan_box():
         rx.list(
             create_checkmark_list_item(
                 icon_color="#6EE7B7",
-                item_text="7000 créditos por mes",
+                item_text="7000 credits per month",
             ),
             create_checkmark_list_item(
                 icon_color="#6EE7B7",
-                item_text="4 usuarios",
+                item_text="4 users",
             ),
             create_checkmark_list_item(
                 icon_color="#6EE7B7",
-                item_text="utiliza tus créditos en cualquier momento",
+                item_text="use your credits at any time",
             ),
             create_checkmark_list_item(
                 icon_color="#6EE7B7",
-                item_text="productos exclusivos",
+                item_text="exclusive products",
             ),
             create_checkmark_list_item(
                 icon_color="#6EE7B7",
-                item_text="Soporte 24/7",
+                item_text="support 24/7",
             ),
             flex_grow="1",
             margin_bottom="2rem",
@@ -54,7 +54,7 @@ def create_pro_plan_box():
             hover_styles={"background-color": "#1D4ED8","color":"#ffffff"},
             bg_color="#ffffff",
             text_color="#FFBE76",
-            button_text="Ver Productos De IA",
+            button_text="Find AI Products",
         ),
         class_name="transform",
         background_color="#FFBE76",

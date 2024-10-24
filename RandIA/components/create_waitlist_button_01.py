@@ -6,7 +6,7 @@ from RandIA.routes import Route
 def create_waitlist_button():
     """Create a 'Join Waitlist' button."""
     return rx.el.button(
-        "Ver Productos De IA",
+        "Find AI Products",
         
         on_click=rx.redirect(Route.FUNNEL.value),
         #href="#waitlist",

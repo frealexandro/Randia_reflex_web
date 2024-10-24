@@ -19,7 +19,8 @@ def create_footer_content():
                 text="RandiA",
             ),
             rx.text(
-                "Soluciona tus problemas de inteligencia artificial con RandiA, el marketplace de inteligencia artificial más grande del mundo.",
+                "Find the best AI solutions for your business with RandiA, the world's largest AI marketplace.",
+                #Soluciona tus problemas de inteligencia artificial con RandiA, el marketplace de inteligencia artificial más grande del mundo.
                 color="#9CA3AF",
             ),
             text_align="center",
@@ -30,13 +31,13 @@ def create_footer_content():
                 heading_type="h4",
                 font_size="1.125rem",
                 font_weight="600",
-                text="Contáctanos",
+                text="Contáct Us",
             ),
             # create_text(
             #     content="Bogotá, Colombia"
             # ),
-            create_text(content="Llámanos: +57 3058195931"),
-            create_text(content="Email: randia.team@randia.io "),
+            create_text(content="Call Us: +57 3058195931"),
+            create_text(content="Mail: randia.team@randia.io "),
             #rx.text("Email: info@yourcompany.com"),
             text_align="center",
         ),

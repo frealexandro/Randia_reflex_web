@@ -15,7 +15,7 @@ def create_social_media_section():
             heading_type="h4",
             font_size="1.125rem",
             font_weight="600",
-            text="Siguenos",
+            text="Follow Us",
         ),
         rx.flex(
             #create_icon_link(

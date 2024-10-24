@@ -21,23 +21,25 @@ def create_basic_plan_box():
         rx.list(
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="2000 créditos por mes",
+                item_text="2000 credits per month",
+                #créditos por mes
             ),
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="1 usuario",
+                item_text="1 user",
             ),
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="utiliza tus créditos en cualquier momento",
+                item_text="use your credits at any time",
+                #utiliza tus créditos en cualquier momento
             ),
              create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="productos basicos",
+                item_text="basic products",
             ),
              create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="Soporte 24/7",
+                item_text="support 24/7",
             ),
             flex_grow="1",
             margin_bottom="2rem",
@@ -46,7 +48,7 @@ def create_basic_plan_box():
             hover_styles={"background-color": "#1D4ED8","color":"#ffffff"},
             bg_color="#FFBE76",
             text_color="#ffffff",
-            button_text="Ver Productos De IA",
+            button_text="Find AI Products",
         ),
         background_color="#F9FAFB",
         display="flex",

@@ -22,28 +22,28 @@ def create_enterprise_plan_box():
         rx.list(
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="10000 créditos por mes",
+                item_text="10000 credits per month",
             ),
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="10 usuarios",
+                item_text="10 users",
             ),
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="utiliza tus créditos en cualquier momento",
+                item_text="use your credits at any time",
             ),
             
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="productos exclusivos",
+                item_text="exclusive products",
             ),
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="soporte 24/7",
+                item_text="support 24/7",
             ),
             create_checkmark_list_item(
                 icon_color="#10B981",
-                item_text="accesso a nuestras API",
+                item_text="API access",
             ),
             flex_grow="1",
             margin_bottom="2rem",
@@ -52,7 +52,7 @@ def create_enterprise_plan_box():
             hover_styles={"background-color": "#1D4ED8","color":"#ffffff"},
             bg_color="#FFBE76",
             text_color="#ffffff",
-            button_text="Ver Productos De IA", 
+            button_text="Find AI Products", 
         ),
         background_color="#F9FAFB",
         display="flex",

@@ -4,7 +4,7 @@ from RandIA.routes import Route
 def create_free_trial_button():
     """Create a 'Start Free Trial' button with specific styling."""
     return rx.el.button(
-        "Ver Productos",
+        "AI Products",
         on_click=rx.redirect(Route.PRODUCTS.value),
         background_color="#FFBE76",
         font_weight="500",

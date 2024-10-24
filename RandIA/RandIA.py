@@ -11,5 +11,5 @@ from RandIA.pages.products_03 import products
 
 app = rx.App()
 app.add_page(index_page)
-app.add_page(funnel_page)
+#app.add_page(funnel_page)
 app.add_page(products)

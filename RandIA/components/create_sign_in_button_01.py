@@ -9,7 +9,7 @@ from RandIA.routes import Route
 def create_sign_in_button():
     """Create a 'Sign In' button with specific styling."""
     return rx.el.button(
-        "Iniciar Sesión",
+        "Login",
         on_click=rx.redirect(Route.INICIO.value),
         font_weight="500",
         _hover={"color": "#111827"},
