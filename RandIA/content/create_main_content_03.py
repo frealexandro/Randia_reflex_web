@@ -33,7 +33,7 @@ def create_main_content():
                 create_feature_card(
                     image_alt="Data Analyzer",
                     image_src="/muestra_2_analizador_textos.png",
-                    card_title="🤖 Data Analyzer",
+                    card_title="📊 Data Analyzer",
                     card_description="This tool allows you to analyze text data from various Excel files. You can classify text into custom categories, such as emotions, feelings, or any other tags you define.",
                     number_credits='5',
                     card_caracteristicas="Conect and analyze your files automatically, automating the process without the need for manual intervention.",
@@ -41,16 +41,16 @@ def create_main_content():
                     route_href = "https://sentiment-analyzer-pro-randia.replit.app/"
                 ),
                 create_feature_card(
-                    image_alt="Sentiment Classifier in Social Networks with AI",
+                    image_alt="SEO Analysis & Optimization",
                     #Clasificador de Sentimientos en Redes Sociales con IA
-                    image_src="/muestra_2_construction.png",
-                    card_title="🤖 Sentiment Classifier in Social Networks with AI",
-                    card_description="Tool that analyzes comments on social networks to identify if they are positive, negative, or neutral.",
+                    image_src="/muestra_2_seo_optimizer.png",
+                    card_title="🌐 SEO Analysis & Optimization",
+                    card_description="Advanced SEO analysis with AI: optimize content, enhance performance metrics, and efficiently process multiple URLs or entire websites.",
                     #Herramienta que analiza los comentarios en redes sociales para identificar si son positivos, negativos o neutrales.
                     number_credits='5',
-                    card_caracteristicas="Analyze comments and detect feelings, automating the process without the need for manual intervention.",
+                    card_caracteristicas="Professional SEO analysis: AI-powered suggestions, content optimization, performance metrics, and bulk URL processing.",
                     #Analiza comentarios y detecta sentimientos, automatizando el proceso sin necesidad de intervención manual.
-                    route_href = "https://sentiment-analyzer-pro-randia.replit.app/"
+                    route_href = "https://seo-content-optimizer.replit.app/"
                 ),
                 create_feature_card(
                     image_alt="Search for Technical Documentation by AI",
@@ -71,7 +71,7 @@ def create_main_content():
                     #Chatbot especializado en responder preguntas frecuentes utilizando IA, mejorando la eficiencia en tiempos de respuesta.
                     number_credits='5',
                     card_caracteristicas="Chatbot specialized in answering frequently asked questions using AI, improving efficiency in response times.",
-                    route_href= "https://sentiment-analyzer-pro-randia.replit.app/"
+                    route_href= "https://seo-content-optimizer.replit.app/"
                 ),
                 # create_feature_card(
                 #     image_alt="Paquete Flujo de Ingesta, Transformación y Carga (básico)",
