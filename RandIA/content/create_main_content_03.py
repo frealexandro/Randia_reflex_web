@@ -55,12 +55,12 @@ def create_main_content():
                 create_feature_card(
                     image_alt="Search for Technical Documentation by AI",
                     #Búsqueda de Documentacion Tecnica por IA
-                    image_src="/muestra_2_construction.png",
-                    card_title="🤖 Search for Technical Documentation by AI",
-                    card_description="System that allows you to search for technical documentation using AI, improving the efficiency of your searches.",
+                    image_src="/muestra_2_podcast.png",
+                    card_title="🎧 Podcast Insights AI",
+                    card_description="Advanced AI-driven podcast analysis: transcribe, extract key insights, and analyze speaker data from any Spotify podcast.",
                     number_credits='5',
-                    card_caracteristicas="Search for technical documentation using AI, automating the process without the need for manual intervention.",
-                    route_href= "https://sentiment-analyzer-pro-randia.replit.app/"
+                    card_caracteristicas="Professional podcast analysis: AI-powered transcription, speaker identification, topic extraction, and full episode breakdown.",
+                    route_href= "https://podcast-insight-ai.replit.app/"
                 ),
                 create_feature_card(
                     image_alt="AI Advanced Customer Service Chatbot",
