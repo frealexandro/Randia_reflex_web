@@ -35,7 +35,7 @@ def create_main_content():
                     image_src="/muestra_2_analizador_textos.png",
                     card_title="📊 Data Analyzer",
                     card_description="This tool allows you to analyze text data from various Excel files. You can classify text into custom categories, such as emotions, feelings, or any other tags you define.",
-                    number_credits='5',
+                    number_credits='Free',
                     card_caracteristicas="Conect and analyze your files automatically, automating the process without the need for manual intervention.",
                     #Conecta y analiza tus archivos automáticamente, automatizando el proceso sin necesidad de intervención manual.
                     route_href = "https://sentiment-analyzer-pro-randia.replit.app/"
@@ -47,7 +47,7 @@ def create_main_content():
                     card_title="🌐 SEO Analysis & Optimization",
                     card_description="Advanced SEO analysis with AI: optimize content, enhance performance metrics, and efficiently process multiple URLs or entire websites.",
                     #Herramienta que analiza los comentarios en redes sociales para identificar si son positivos, negativos o neutrales.
-                    number_credits='5',
+                    number_credits='Free',
                     card_caracteristicas="Professional SEO analysis: AI-powered suggestions, content optimization, performance metrics, and bulk URL processing.",
                     #Analiza comentarios y detecta sentimientos, automatizando el proceso sin necesidad de intervención manual.
                     route_href = "https://seo-content-optimizer.replit.app/"
@@ -58,7 +58,7 @@ def create_main_content():
                     image_src="/muestra_2_podcast.png",
                     card_title="🎧 Podcast Insights AI",
                     card_description="Advanced AI-driven podcast analysis: transcribe, extract key insights, and analyze speaker data from any Spotify podcast.",
-                    number_credits='5',
+                    number_credits='Free',
                     card_caracteristicas="Professional podcast analysis: AI-powered transcription, speaker identification, topic extraction, and full episode breakdown.",
                     route_href= "https://podcast-insight-ai.replit.app/"
                 ),
@@ -69,7 +69,7 @@ def create_main_content():
                     card_title="🤖 AI Advanced Customer Service Chatbot",
                     card_description="Chatbot specialized in answering frequently asked questions using AI, improving efficiency in response times.",
                     #Chatbot especializado en responder preguntas frecuentes utilizando IA, mejorando la eficiencia en tiempos de respuesta.
-                    number_credits='5',
+                    number_credits='Free',
                     card_caracteristicas="Chatbot specialized in answering frequently asked questions using AI, improving efficiency in response times.",
                     route_href= "https://seo-content-optimizer.replit.app/"
                 ),

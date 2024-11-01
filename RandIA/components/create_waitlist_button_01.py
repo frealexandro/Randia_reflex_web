@@ -8,7 +8,7 @@ def create_waitlist_button():
     return rx.el.button(
         "Find AI Products",
         
-        on_click=rx.redirect(Route.FUNNEL.value),
+        on_click=rx.redirect(Route.PRODUCTS.value),
         #href="#waitlist",
         background_color="#ffffff",
         transition_duration="300ms",

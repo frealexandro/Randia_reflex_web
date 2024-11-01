@@ -5,7 +5,7 @@ def create_price_tag(number_credits):
     """Creates a price tag box with a fixed price of $99.99 positioned absolutely on the top right corner of its container."""
     return rx.box(
         rx.text.span(
-            f"Desde ${number_credits} USD", font_weight="700", color="black"
+            f"{number_credits}", font_weight="700", color="black"
         ),
         position="absolute",
         background_color="#FFBE76",
