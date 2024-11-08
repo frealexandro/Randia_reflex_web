@@ -1,0 +1,19 @@
+services:
+  backend:
+    image: gcr.io/axiomatic-path-440205-v4/backend:v1
+    ports:
+      - 8000:8000
+    depends_on:
+      - redis
+    environment:
+      - API_URL= https://randia.io
+
+  frontend:
+    image: gcr.io/axiomatic-path-440205-v4/frontend:v1
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+
+  redis:
+    image: redis
