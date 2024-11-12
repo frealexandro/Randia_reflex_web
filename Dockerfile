@@ -1,12 +1,11 @@
-FROM python:3.12 AS builder
+FROM python:3.12
+
+ENV REDIS_URL=redis://redis:6379
+ENV PYTHONUNBUFFERED=1
+
 WORKDIR /app
 COPY . .
-RUN pip install -r requirements.txt
-RUN reflex export --frontend-only --no-zip
+RUN pip install h2==4.1.0 python-dotenv==1.0.1 supabase==2.7.4 reflex==0.6.1
 
-FROM nginx
-COPY --from=builder /app/.web/_static /usr/share/nginx/html
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+ENTRYPOINT ["reflex", "run", "--env", "prod", "--backend-only", "--loglevel", "debug"]
 
-# Modificar el puerto a 8080 para Cloud Run
-RUN sed -i 's/listen 80/listen 8080/g' /etc/nginx/conf.d/default.conf

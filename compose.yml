@@ -1,26 +1,22 @@
-apiVersion: serving.knative.dev/v1
-kind: Service
-metadata:
-  name: reflex-app
-spec:
-  template:
-    spec:
-      containers:
-      # Backend container
-      - name: backend
-        image: gcr.io/axiomatic-path-440205-v4/backend
-        env:
-        - name: REDIS_URL
-          value: "redis://localhost:6379"
-        - name: PYTHONUNBUFFERED
-          value: "1"
+services:
+  backend:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - redis
 
-      # Frontend container (nginx)
-      - name: frontend
-        image: gcr.io/axiomatic-path-440205-v4/frontend
-        ports:
-        - containerPort: 8080
+  frontend:
+    build:
+      dockerfile: web.Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - backend
 
-      # Redis container
-      - name: redis
-        image: redis:latest
+  redis:
+    image: redis:latest
