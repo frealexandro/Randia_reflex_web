@@ -1,7 +1,6 @@
 *.db
 *.py[cod]
 .env
-.web
 /venv
 __pycache__/
 assets/external/
