@@ -1,19 +1,26 @@
-services:
-  backend:
-    image: gcr.io/axiomatic-path-440205-v4/backend:v1
-    ports:
-      - 8000:8000
-    depends_on:
-      - redis
-    environment:
-      - API_URL= https://randia.io
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: reflex-app
+spec:
+  template:
+    spec:
+      containers:
+      # Backend container
+      - name: backend
+        image: gcr.io/axiomatic-path-440205-v4/backend
+        env:
+        - name: REDIS_URL
+          value: "redis://localhost:6379"
+        - name: PYTHONUNBUFFERED
+          value: "1"
 
-  frontend:
-    image: gcr.io/axiomatic-path-440205-v4/frontend:v1
-    ports:
-      - 80:80
-    depends_on:
-      - backend
+      # Frontend container (nginx)
+      - name: frontend
+        image: gcr.io/axiomatic-path-440205-v4/frontend
+        ports:
+        - containerPort: 8080
 
-  redis:
-    image: redis
+      # Redis container
+      - name: redis
+        image: redis:latest
