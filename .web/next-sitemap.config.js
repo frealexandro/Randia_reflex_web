@@ -1,1 +1,0 @@
-module.exports = {"siteUrl": "https://randia.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}
