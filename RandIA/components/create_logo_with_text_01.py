@@ -9,8 +9,8 @@ def create_logo_with_text():
     return rx.flex(
         rx.el.button(
         rx.image(
-            alt="RandIA-negro-logo.png",
-            src="/RandIA-negro-logo.png",
+            alt="RandIA-logo-normal.png",
+            src="/RandIA-logo-normal.png",
             #on_click=rx.redirect(Route.INDEX.value),
             #href = Route.INDEX.value,
             height="2.5rem",
@@ -29,7 +29,7 @@ def create_logo_with_text():
             #href = Route.INDEX.value,
             on_click=rx.redirect(Route.INDEX.value),
             font_weight="600",
-            color="#1F2937",
+            color="white",
             font_size="1.25rem",
             line_height="1.75rem",
         ),

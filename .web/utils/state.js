@@ -2,7 +2,7 @@
 import axios from "axios";
 import io from "socket.io-client";
 import JSON5 from "json5";
-import env from "/env.json";
+import env from "$/env.json";
 import Cookies from "universal-cookie";
 import { useEffect, useRef, useState } from "react";
 import Router, { useRouter } from "next/router";
@@ -12,10 +12,9 @@ import {
   onLoadInternalEvent,
   state_name,
   exception_state_name,
-} from "utils/context.js";
-import debounce from "/utils/helpers/debounce";
-import throttle from "/utils/helpers/throttle";
-import * as Babel from "@babel/standalone";
+} from "$/utils/context.js";
+import debounce from "$/utils/helpers/debounce";
+import throttle from "$/utils/helpers/throttle";
 
 // Endpoint URLs.
 const EVENTURL = env.EVENT;
@@ -139,8 +138,7 @@ export const evalReactComponent = async (component) => {
   if (!window.React && window.__reflex) {
     window.React = window.__reflex.react;
   }
-  const output = Babel.transform(component, { presets: ["react"] }).code;
-  const encodedJs = encodeURIComponent(output);
+  const encodedJs = encodeURIComponent(component);
   const dataUri = "data:text/javascript;charset=utf-8," + encodedJs;
   const module = await eval(`import(dataUri)`);
   return module.default;
@@ -180,11 +178,6 @@ export const applyEvent = async (event, socket) => {
     return false;
   }
 
-  if (event.name == "_console") {
-    console.log(event.payload.message);
-    return false;
-  }
-
   if (event.name == "_remove_cookie") {
     cookies.remove(event.payload.key, { ...event.payload.options });
     queueEventIfSocketExists(initialEvents(), socket);
@@ -215,12 +208,6 @@ export const applyEvent = async (event, socket) => {
     return false;
   }
 
-  if (event.name == "_set_clipboard") {
-    const content = event.payload.content;
-    navigator.clipboard.writeText(content);
-    return false;
-  }
-
   if (event.name == "_download") {
     const a = document.createElement("a");
     a.hidden = true;
@@ -232,11 +219,6 @@ export const applyEvent = async (event, socket) => {
     a.download = event.payload.filename;
     a.click();
     a.remove();
-    return false;
-  }
-
-  if (event.name == "_alert") {
-    alert(event.payload.message);
     return false;
   }
 
@@ -256,9 +238,35 @@ export const applyEvent = async (event, socket) => {
     return false;
   }
 
-  if (event.name == "_call_script") {
+  if (
+    event.name == "_call_function" &&
+    typeof event.payload.function !== "string"
+  ) {
     try {
-      const eval_result = eval(event.payload.javascript_code);
+      const eval_result = event.payload.function();
+      if (event.payload.callback) {
+        if (!!eval_result && typeof eval_result.then === "function") {
+          event.payload.callback(await eval_result);
+        } else {
+          event.payload.callback(eval_result);
+        }
+      }
+    } catch (e) {
+      console.log("_call_function", e);
+      if (window && window?.onerror) {
+        window.onerror(e.message, null, null, null, e);
+      }
+    }
+    return false;
+  }
+
+  if (event.name == "_call_script" || event.name == "_call_function") {
+    try {
+      const eval_result =
+        event.name == "_call_script"
+          ? eval(event.payload.javascript_code)
+          : eval(event.payload.function)();
+
       if (event.payload.callback) {
         if (!!eval_result && typeof eval_result.then === "function") {
           eval(event.payload.callback)(await eval_result);
@@ -544,13 +552,19 @@ export const uploadFiles = async (
 
 /**
  * Create an event object.
- * @param name The name of the event.
- * @param payload The payload of the event.
- * @param handler The client handler to process event.
+ * @param {string} name The name of the event.
+ * @param {Object.<string, Any>} payload The payload of the event.
+ * @param {Object.<string, (number|boolean)>} event_actions The actions to take on the event.
+ * @param {string} handler The client handler to process event.
  * @returns The event object.
  */
-export const Event = (name, payload = {}, handler = null) => {
-  return { name, payload, handler };
+export const Event = (
+  name,
+  payload = {},
+  event_actions = {},
+  handler = null
+) => {
+  return { name, payload, handler, event_actions };
 };
 
 /**
@@ -676,6 +690,12 @@ export const useEventLoop = (
     if (!(args instanceof Array)) {
       args = [args];
     }
+
+    event_actions = events.reduce(
+      (acc, e) => ({ ...acc, ...e.event_actions }),
+      event_actions ?? {}
+    );
+
     const _e = args.filter((o) => o?.preventDefault !== undefined)[0];
 
     if (event_actions?.preventDefault && _e?.preventDefault) {
@@ -731,6 +751,7 @@ export const useEventLoop = (
       addEvents([
         Event(`${exception_state_name}.handle_frontend_exception`, {
           stack: error.stack,
+          component_stack: "",
         }),
       ]);
       return false;
@@ -742,6 +763,7 @@ export const useEventLoop = (
       addEvents([
         Event(`${exception_state_name}.handle_frontend_exception`, {
           stack: event.reason.stack,
+          component_stack: "",
         }),
       ]);
       return false;

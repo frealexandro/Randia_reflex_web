@@ -82,10 +82,14 @@ def create_header_content():
             create_free_trial_button(),
             display=rx.breakpoints(
                 {"0px": "none", "640px": "flex"}
+            
             ),
         align_items=rx.breakpoints({"640px": "center"}),
             margin_left=rx.breakpoints({"640px": "1.5rem"}),
+            bg = "black",
         ),
+
+
         rx.flex(
             create_mobile_menu_button(),
             display=rx.breakpoints(
@@ -96,4 +100,5 @@ def create_header_content():
         display="flex",
         height="4rem",
         justify_content="space-between",
+        bg = "black",
     )

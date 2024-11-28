@@ -9,7 +9,7 @@ def create_page_layout():
     return rx.box(
         rx.box(
             create_header(),
-            background_color="#ffffff",
+            background_color="black",
             box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
         ),
         create_main_content(),
@@ -21,5 +21,5 @@ def create_page_layout():
             color="#ffffff",
         ),
         class_name="font-['Inter']",
-        background_color="#F3F4F6",
+        background_color="black",
     )
