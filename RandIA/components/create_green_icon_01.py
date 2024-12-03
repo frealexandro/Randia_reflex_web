@@ -9,6 +9,7 @@ def create_green_icon(alt_text, icon_tag):
         tag=icon_tag,
         height="1.5rem",
         margin_right="1rem",
-        color="#FFBE76",
+        color="#EB6210",
         width="1.5rem",
+        _hover={"color": "#1D4ED8"},
     )

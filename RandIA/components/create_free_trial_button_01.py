@@ -6,7 +6,7 @@ def create_free_trial_button():
     return rx.el.button(
         "AI Products",
         on_click=rx.redirect(Route.PRODUCTS.value),
-        background_color="#FFBE76",
+        background_color="#EB6210",
         font_weight="500",
         _hover={"background-color": "#1D4ED8"},
         margin_left="1rem",

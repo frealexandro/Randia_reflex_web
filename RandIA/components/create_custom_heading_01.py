@@ -12,6 +12,7 @@ def create_custom_heading_a(
         font_size=font_size,
         line_height="1.75rem",
         as_=heading_type,
+        color="#EB6210",
     )
 
 
@@ -29,6 +30,7 @@ def create_custom_heading(
         as_="h3",
         ##color="black",
         color=color,
+        _hover={"color": "#1D4ED8"},
     )
 
 

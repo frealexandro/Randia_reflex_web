@@ -11,7 +11,7 @@ def create_learn_more_link(link_href):
     return rx.el.button(
         "Try it now",
         on_click=rx.redirect(link_href),
-        background_color="#FFBE76",
+        background_color="#EB6210",
         font_weight="500",
         _hover={"background-color": "#1D4ED8"},
         margin_left="1rem",
@@ -23,7 +23,7 @@ def create_learn_more_link(link_href):
         font_size="0.875rem",
         line_height="1.25rem",
         color="#ffffff",
-        border="1.5px solid #1D4ED8"
+        border="1.5px solid #EB6210"
           )
 
 

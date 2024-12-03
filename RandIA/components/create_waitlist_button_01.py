@@ -10,7 +10,7 @@ def create_waitlist_button():
         
         on_click=rx.redirect(Route.PRODUCTS.value),
         #href="#waitlist",
-        background_color="#ffffff",
+        background_color="#EB6210",
         transition_duration="300ms",
         font_weight="600",
         _hover={"background-color": "#1D4ED8","color":"#ffffff"},
@@ -20,7 +20,7 @@ def create_waitlist_button():
         padding_bottom="0.75rem",
         border_radius="9999px",
         box_shadow="0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-        color="#FFBE76",
+        color="#ffffff",
         transition_property="background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
         transition_timing_function="cubic-bezier(0.4, 0, 0.2, 1)",
     )

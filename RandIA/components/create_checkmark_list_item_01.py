@@ -11,5 +11,5 @@ def create_checkmark_list_item(icon_color, item_text):
         display="flex",
         align_items="center",
         margin_bottom="0.75rem",
-        color = "black"
+        color = "ffffff"
     )

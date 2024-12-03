@@ -28,7 +28,7 @@ def create_footer_container():
             padding_left="1rem",
             padding_right="1rem",
         ),
-        background_color="#1F2937",
+        background_color="#black",
         padding_top="2.5rem",
         padding_bottom="2.5rem",
         color="#ffffff",

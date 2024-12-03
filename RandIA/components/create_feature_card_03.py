@@ -18,11 +18,11 @@ def create_feature_card(
             card_caracteristicas=card_caracteristicas,
             route_href=route_href
         ),
-        background_color="#ffffff",
+        background_color="black",
         overflow="hidden",
         border_radius="0.5rem",
-        box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-        _hover={"background-color": "#FFBE76"},
+        box_shadow="0 8px 12px -1px rgba(255, 255, 255, 0.2), 0 4px 8px -1px rgba(255, 255, 255, 0.15)",
+        #_hover={"background-color": "#FFBE76"},
         
         
     )

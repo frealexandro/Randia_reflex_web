@@ -32,5 +32,5 @@ def create_header():
             PageState.is_mobile_menu_open,
             create_mobile_menu(),),
         background_color="black",
-        box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        box_shadow="0 8px 12px -1px rgba(255, 255, 255, 0.2), 0 4px 8px -1px rgba(255, 255, 255, 0.15)",
     )

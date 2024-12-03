@@ -7,6 +7,6 @@ def create_card_description(description_text):
     return rx.text(
         description_text,
         margin_bottom="1rem",
-        color="#4B5563",
+        color="#ffffff",
         #_hover={"background-color": "#1D4ED8"},
     )

@@ -17,5 +17,5 @@ def create_mobile_nav_link(text,href):
         padding_bottom="0.5rem",
         font_size="1rem",
         line_height="1.5rem",
-        color="#374151",
+        color="white",
     )

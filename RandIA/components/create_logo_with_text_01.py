@@ -32,6 +32,7 @@ def create_logo_with_text():
             color="white",
             font_size="1.25rem",
             line_height="1.75rem",
+            _hover={"color": "#1D4ED8"},
         ),
         display="flex",
         align_items="center",

@@ -14,7 +14,7 @@ def create_card_content(card_title, card_description,card_caracteristicas, route
             font_size="1.25rem",
             margin_bottom="0.5rem",
             heading_text=card_title,
-            #_hover={"background-color": "#1D4ED8"},
+           
         ),
         create_card_description(
             description_text=card_description

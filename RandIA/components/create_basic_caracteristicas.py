@@ -7,10 +7,10 @@ from RandIA.routes import Route
 
 def create_basic_casracteristicas():
     """Create a 'Learn More' link with custom styling."""
-    return rx.el.a(
+    return rx.text(
         "Features",
-        #href=Route.FUNNEL.value,
-        class_name="text-[black]",
+        color="#EB6210",
+        #class_name="text-[#EB6210] hover:text-[#1D4ED8] font-semibold",
         font_weight="600",
-        #_hover={"text-decoration": "underline"},
+        _hover={"color": "#1D4ED8"},
     )

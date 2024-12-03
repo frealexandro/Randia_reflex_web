@@ -13,7 +13,7 @@ def create_services_section():
     return rx.box(
         create_centered_heading(
             heading_text="Your AI Marketplace",
-            color="#1F2937"
+            color="#white"
         ),
         rx.box(
             create_feature_box(

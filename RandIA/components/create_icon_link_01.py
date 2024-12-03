@@ -19,5 +19,5 @@ def create_icon_link(alt_text, icon_tag,href):
     return rx.el.a(
         create_icon(alt_text=alt_text, icon_tag=icon_tag),
         href=href,
-        _hover={"color": "#D1D5DB"},
+        _hover={"color": "#1D4ED8"},
     )

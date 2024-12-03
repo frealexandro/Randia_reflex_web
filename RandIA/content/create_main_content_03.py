@@ -21,13 +21,14 @@ def create_main_content():
             font_size="2.25rem",
             line_height="2.5rem",
             text_align="center",
-            color="#1F2937",
+            color="white",
             as_="h1",
+            padding_top="4rem",
         ),
         create_centered_heading_smaller(
             heading_text="All our products have a free credit trial period, so you can try them before subscribing.",
             #Para adquirir algunos de nuestros productos de inteligencia artificial no necesitas suscripción, solo pagas el producto
-            color="#1F2937",
+            color="white",
         ),
             rx.box(
                 create_feature_card(
@@ -111,7 +112,7 @@ def create_main_content():
         ),
         rx.box(
             create_section_heading(
-                heading_text="¿Por qué RandIA?"
+                heading_text="¿Why choose RandIA?"
             ),
             rx.box(
                 create_feature_box(

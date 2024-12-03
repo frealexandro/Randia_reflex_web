@@ -12,7 +12,7 @@ def create_why_choose_us_section():
     return rx.box(
         create_centered_heading(
             heading_text="Why Choose Us?",
-            color="#1F2937"
+            color="#ffffff",    
         ),
         rx.box(
             create_icon_with_text(

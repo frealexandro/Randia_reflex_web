@@ -25,13 +25,13 @@ def create_feature_box(
             heading_text=feature_title,
         ),
         create_colored_text(
-            text_color="#4B5563",
+            text_color="white",
             text_content=feature_description,
         ),
-        background_color="#ffffff",
+        background_color="black",
         padding="1.5rem",
         border_radius="0.5rem",
-        box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        box_shadow="0 8px 12px -1px rgba(255, 255, 255, 0.2), 0 4px 8px -1px rgba(255, 255, 255, 0.15)",
         text_align="center",
     )
 

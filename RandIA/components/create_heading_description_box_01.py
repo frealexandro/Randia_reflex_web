@@ -16,7 +16,8 @@ def create_heading_description_box(
             line_height="1.75rem",
             margin_bottom="0.5rem",
             heading_text=heading_text,
-            color="#1F2937",
+            color="#EB6210",
+            
         ),
         create_gray_text(text_content=description_text),
     )

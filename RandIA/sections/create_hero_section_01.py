@@ -8,19 +8,22 @@ def create_hero_section():
     """Create the hero section with main heading and call-to-action."""
     return rx.box(
         rx.heading(
-            "THE BIGGEST AI MARKETPLACE IN THE WORLD",
+            "BIGGEST AI MARKETPLACE",
+            color="#EB6210",
             font_weight="700",
-            margin_bottom="1rem",
-            font_size="2.25rem",
-            line_height="2.5rem",
+            margin_bottom="4rem",
+            font_size="4.25rem",
+            line_height="5rem",
             as_="h1",
+            _hover={"color":"#1D4ED8"},
         ),
         create_paragraph(
 
             paragraph_text="Stop looking for different solutions for your artificial intelligence problems, at RandiA you will find everything you need for your company."
         ),
         create_paragraph(
-            paragraph_text=" High Quality | Infinite Solutions | Innovation | Artificial intelligence "
+            paragraph_text=" High Quality | Infinite Solutions | Innovation | Artificial intelligence ",
+            
         ),
         create_waitlist_button(),
         width="100%",

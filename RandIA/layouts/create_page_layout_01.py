@@ -10,12 +10,17 @@ def create_page_layout():
         rx.box(
             create_header(),
             background_color="black",
-            box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            box_shadow="0 4px 6px -1px rgba(255, 255, 255, 0.2), 0 2px 4px -1px rgba(255, 255, 255, 0.2)",
+            position="fixed",  # Fija el header
+    top="0",          # Alinea al tope de la página
+    width="100%",     # Ocupa todo el ancho
+    z_index="999",
+        
         ),
         create_main_content(),
         rx.box(
             create_footer_container(),
-            background_color="#1F2937",
+            background_color="black",
             padding_top="2rem",
             padding_bottom="2rem",
             color="#ffffff",

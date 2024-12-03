@@ -15,30 +15,30 @@ def create_basic_plan_box():
             line_height="2rem",
             margin_bottom="1rem",
             heading_text="Basic",
-            color="#1F2937",
+            color="#ffffff",
         ),
-        create_price_text(price="$50"),
+        create_price_text(price="$50",color="#ffffff"),
         rx.list(
             create_checkmark_list_item(
-                icon_color="#10B981",
+                icon_color="#1D4ED8",
                 item_text="2000 credits per month",
                 #créditos por mes
             ),
             create_checkmark_list_item(
-                icon_color="#10B981",
+                icon_color="#1D4ED8",
                 item_text="1 user",
             ),
             create_checkmark_list_item(
-                icon_color="#10B981",
+                icon_color="#1D4ED8",
                 item_text="use your credits at any time",
                 #utiliza tus créditos en cualquier momento
             ),
              create_checkmark_list_item(
-                icon_color="#10B981",
+                icon_color="#1D4ED8",
                 item_text="basic products",
             ),
              create_checkmark_list_item(
-                icon_color="#10B981",
+                icon_color="#1D4ED8",
                 item_text="support 24/7",
             ),
             flex_grow="1",
@@ -46,14 +46,14 @@ def create_basic_plan_box():
         ),
         create_styled_button(
             hover_styles={"background-color": "#1D4ED8","color":"#ffffff"},
-            bg_color="#FFBE76",
-            text_color="#ffffff",
+            bg_color="white",
+            text_color="black",
             button_text="Find AI Products",
         ),
-        background_color="#F9FAFB",
+        background_color="black",
         display="flex",
         flex_direction="column",
         padding="2rem",
         border_radius="0.5rem",
-        box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        box_shadow="0 8px 12px -1px rgba(255, 255, 255, 0.2), 0 4px 8px -1px rgba(255, 255, 255, 0.15)",
     )

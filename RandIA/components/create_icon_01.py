@@ -8,5 +8,6 @@ def create_icon(alt_text, icon_tag):
         height="3rem",
         margin_bottom="1rem",
         width="3rem",
-        color = "#FFBE76",
+        color = "#EB6210",
+        _hover={"color": "#1D4ED8"},
     )

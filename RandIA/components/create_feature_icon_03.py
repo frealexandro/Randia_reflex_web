@@ -15,5 +15,5 @@ def create_feature_icon(alt_text, icon_name):
         margin_right="auto",
         width="3rem",
         #color = ""
-        color="#FFBE76",
+        color="#EB6210",
     )
